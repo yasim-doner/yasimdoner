@@ -5,6 +5,4 @@ services:
       dockerfile: Dockerfile
     image: yasimdoner-portfolio:latest
     container_name: yasimdoner-portfolio
-    ports:
-      - "${PORT:-3000}:3000"
     restart: unless-stopped
