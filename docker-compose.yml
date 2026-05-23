@@ -6,5 +6,5 @@ services:
     image: yasimdoner-portfolio:latest
     container_name: yasimdoner-portfolio
     ports:
-      - "80:80"
+      - "${PORT:-3000}:80"
     restart: unless-stopped
