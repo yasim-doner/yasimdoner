@@ -27,7 +27,7 @@ const projectsData = [
     title: 'Yıldız Rover Autonomy',
     category: 'robotics',
     description: 'Simulation-validated autonomous navigation stack utilizing Gazebo virtual fields, LiDAR, sensor fusions, and ROS 2 hardware interfaces.',
-    link: 'https://github.com/yasim-doner',
+    link: 'https://rover.yildiz.edu.tr',
     tags: ['ROS 2', 'C++', 'Python', 'Gazebo']
   },
   {

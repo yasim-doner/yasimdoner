@@ -65,7 +65,7 @@ const Resume = () => {
             <div className="resume-item">
               <h4>Team Member</h4>
               <h5>Oct 2025 - Present</h5>
-              <p><em>Yıldız Rover</em></p>
+              <p><em><a href="https://rover.yildiz.edu.tr" target="_blank" rel="noreferrer">Yıldız Rover</a></em></p>
               <ul>
                 <li>Developed autonomous navigation stacks utilizing ROS 2 and Gazebo.</li>
                 <li>Implemented localization algorithms and state estimations.</li>
