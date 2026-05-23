@@ -1,0 +1,10 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: yasimdoner-portfolio:latest
+    container_name: yasimdoner-portfolio
+    ports:
+      - "80:80"
+    restart: unless-stopped
