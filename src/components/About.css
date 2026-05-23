@@ -1,0 +1,115 @@
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #172b4d;
+  margin-bottom: 15px;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  margin-bottom: 20px;
+  font-size: 16px;
+  position: relative;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+.about .content ul li strong {
+  margin-right: 8px;
+}
+
+.about .content ul i {
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  top: 6px;
+  color: var(--accent);
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+.about-img-box {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-img-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Skills chips styling */
+.skill-box {
+  background: var(--bg-primary);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  height: 100%;
+  transition: var(--transition);
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  border-color: rgba(20, 157, 221, 0.2);
+}
+
+.skill-box h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #172b4d;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-box h4 i {
+  color: var(--accent);
+  font-size: 16px;
+}
+
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-chips span {
+  font-size: 13px;
+  font-weight: 500;
+  background: #f0f4f9;
+  color: #45505b;
+  padding: 6px 14px;
+  border-radius: 50px;
+  transition: var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.skill-chips span:hover {
+  background: var(--accent);
+  color: var(--text-white);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+  .about-img-box {
+    max-width: 300px;
+    margin: 0 auto 30px auto;
+  }
+}

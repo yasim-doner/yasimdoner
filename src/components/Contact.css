@@ -1,0 +1,116 @@
+.contact .info {
+  padding: 30px;
+  background: var(--bg-primary);
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: var(--accent);
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #dff3fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #45505b;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.contact .info .email, .contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  background: var(--accent);
+  color: var(--text-white);
+}
+
+/* Email Form */
+.contact .email-form {
+  width: 100%;
+  padding: 30px;
+  background: var(--bg-primary);
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.contact .email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .email-form label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #45505b;
+}
+
+.contact .email-form .form-control {
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+  border: 1px solid #dcdcdc;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.contact .email-form .form-control:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.contact .email-form textarea.form-control {
+  resize: vertical;
+}
+
+.contact .email-form button[type="submit"] {
+  background: var(--accent);
+  border: 0;
+  padding: 10px 24px;
+  color: var(--text-white);
+  transition: 0.4s;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.contact .email-form button[type="submit"]:hover {
+  background: var(--accent-hover);
+}
+
+.sent-message {
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+@media (max-width: 576px) {
+  .contact .info {
+    padding: 20px;
+  }
+  .contact .email-form {
+    padding: 20px;
+  }
+}
