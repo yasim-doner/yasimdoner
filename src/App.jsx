@@ -6,12 +6,28 @@ import About from './components/About';
 import Resume from './components/Resume';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import MetroBuzzPrivacyPolicy from './components/MetroBuzzPrivacyPolicy';
 
 function App() {
+  const [currentPath, setCurrentPath] = useState(() => 
+    window.location.pathname.replace(/\/+$/, '').toLowerCase()
+  );
   const [activeSection, setActiveSection] = useState('hero');
+
+  useEffect(() => {
+    const handlePopState = () => {
+      setCurrentPath(window.location.pathname.replace(/\/+$/, '').toLowerCase());
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   // Simple and highly efficient scroll listener for ScrollSpy
   useEffect(() => {
+    if (currentPath === '/metrobuzz-privacy-policy') {
+      return;
+    }
+
     const handleScroll = () => {
       const sections = ['hero', 'about', 'resume', 'portfolio', 'contact'];
       const scrollPosition = window.scrollY + 200; // Offset for trigger
@@ -34,7 +50,11 @@ function App() {
     handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [currentPath]);
+
+  if (currentPath === '/metrobuzz-privacy-policy') {
+    return <MetroBuzzPrivacyPolicy />;
+  }
 
   return (
     <div className="app-container">
